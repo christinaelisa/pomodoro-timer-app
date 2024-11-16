@@ -1,4 +1,4 @@
-#Pomodoro Timer
+# Pomodoro Timer
 
 The popular Pomodoro technique is used for productivity and increased focus. Pomodoro Timer App is a frontend app created using JavaScript, CSS and HTML with a minimalist, lofi aesthetic.
 

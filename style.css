@@ -1,0 +1,46 @@
+body {
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+#container {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#pom-timer {
+  font-size: 1.5rem;
+}
+
+#timer {
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+  font-size: 10rem;
+}
+
+.timer-actions button {
+  border-radius: 500px;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  margin: 5px;
+}
+
+.timer-actions button:hover {
+  cursor: pointer;
+  color: #f292b2;
+  opacity: 0.5;
+  transition-timing-function: ease-in-out;
+}

@@ -19,9 +19,8 @@ function startTimer() {
 
     timeLeft--;
 
-    if (timeLeft <= 1480) {
+    if (timeLeft <= 0) {
       clearInterval(timerInterval);
-      isPommin = false;
     }
   }, 1000);
 }

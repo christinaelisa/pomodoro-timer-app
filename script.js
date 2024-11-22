@@ -13,7 +13,7 @@ let timerInterval = null;
 let isPaused = false;
 
 function startTimer() {
-  if (timerInterval && isPaused == false) {
+  if (timerInterval !== null && isPaused == false) {
     console.log("timer interval already created");
     return;
   } else if (timerInterval == null || (timerInterval && isPaused == true)) {
@@ -25,7 +25,8 @@ function startTimer() {
         ":" +
         `${String(seconds).padStart(2, "0")}`;
       document.getElementById("timer").textContent = updatedDisplay;
-      console.log(updatedDisplay);
+      isPaused = false;
+      console.log(isPaused);
 
       timeLeft--;
 
@@ -43,6 +44,7 @@ function pauseTimer() {
     clearInterval(timerInterval);
     isPaused = true;
     console.log("pause timer");
+    console.log(isPaused);
     console.log(timeLeft);
   } else if (timerInterval == null) {
     console.log("nothing to pause");

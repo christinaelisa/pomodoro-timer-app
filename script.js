@@ -59,7 +59,7 @@ function resetTimer() {
   } else if (timerInterval !== null) {
     clearInterval(timerInterval);
     timerInterval = null;
-    isPaused == false;
+    isPaused = false;
     document.getElementById("timer").textContent = "25:00";
     timeLeft = 25 * 60;
     console.log(timeLeft + " seconds remaining");

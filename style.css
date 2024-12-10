@@ -1,12 +1,24 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-attachment: fixed;
   background-position: center;
   background-image: url("sunset-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
   font-family: "Montserrat", sans-serif;
   position: relative;
   margin: 0;
+  overflow: hidden;
+  padding: 0;
+  justify-content: center;
+  height: 100vh;
 }
 
 body::before {
@@ -25,24 +37,24 @@ body::before {
 
 #container {
   align-items: center;
-  color: white;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 #pom-timer {
-  font-size: 1.5rem;
+  font-size: 4vw;
 }
 
 #timer {
   align-items: center;
   display: flex;
   color: #ffffff;
-  font-size: 10rem;
+  font-size: 15vw;
 }
 
 .timer-actions button {
@@ -50,6 +62,7 @@ body::before {
   border: 1px solid #ffffff;
   color: #000000;
   font-size: 1.25rem;
+  font-weight: 600;
   text-align: center;
   padding: 0.5rem 2rem;
   margin: 5px;

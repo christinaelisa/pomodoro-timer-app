@@ -32,6 +32,7 @@ function startTimer() {
 
       if (timeLeft < 0) {
         clearInterval(timerInterval);
+        startBreak();
         resetTimer();
       }
     }, 1000);
